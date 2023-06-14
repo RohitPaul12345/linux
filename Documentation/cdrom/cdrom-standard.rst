@@ -8,7 +8,7 @@ A Linux CD-ROM standard
 :Updated by: Jens Axboe (axboe@image.dk)
 
 
-Introduction
+INTRODUCTION
 ============
 
 Linux is probably the Unix-like operating system that supports
@@ -113,7 +113,7 @@ standard. At the time of the last update to this document (November
 
 .. _cdrom_api:
 
-Standardizing through another software level
+STANDARDIZING THROUGH ANOTHER SOFTWARE LEVEL
 ============================================
 
 At the time this document was conceived, all drivers directly
@@ -656,8 +656,8 @@ implementation for the *open()* call for CD-ROM s is:
   successful, unless the whole device doesn't exist. The drive will take
   no actions whatsoever.
 
-And what about standards?
--------------------------
+AND WHAT ABOUT STANDARDS?
+=========================
 
 You might hesitate to accept this proposal as it comes from the
 Linux community, and not from some standardizing institute. What
@@ -721,7 +721,7 @@ We hope that these option can convince everybody (both driver
 maintainers and user program developers) to adopt the new CD-ROM
 driver scheme and option flag interpretation.
 
-Description of routines in `cdrom.c`
+DESCRIPTION OF ROUTINES IN `cdrom.c`
 ====================================
 
 Only a few routines in `cdrom.c` are exported to the drivers. In this
@@ -978,7 +978,7 @@ Device dependent *ioctl()'s*
 Finally, all other *ioctl()'s* are passed to the function *dev_ioctl()*,
 if implemented. No memory allocation or verification is carried out.
 
-How to update your driver
+HOW TO UPDATE YOUR DRIVER
 =========================
 
 - Make a backup of your current driver.
@@ -1032,7 +1032,7 @@ How to update your driver
   for `cdrom.o` and your driver, as debugging is much easier this
   way.
 
-Thanks
+THANKS
 ======
 
 Thanks to all the people involved. First, Erik Andersen, who has
